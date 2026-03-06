@@ -1,0 +1,19 @@
+// SPDX-License-Identifier: GPL-2.0-only
+
+/dts-v1/;
+
+#include <skeleton64.dtsi>
+#include <lk2nd.dtsi>
+
+/ {
+	model = "MSM 8953 KRYPTON V1";
+	qcom,msm-id = <0x125 0x00>;
+	qcom,board-id = <0xd0000008 0x00>;
+};
+
+&lk2nd {
+	model = "MSM 8953 KRYPTON V1";
+	compatible = "qcom,msm8953-mtp\0qcom,msm8953\0qcom,mtp";
+
+	lk2nd,dtb-files = "msm8953-blackberry-krypton";
+};
